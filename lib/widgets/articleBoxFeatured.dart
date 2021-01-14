@@ -74,7 +74,7 @@ Widget articleBoxFeatured(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Container(
+                          /*  Container(
                               decoration: BoxDecoration(
                                   color: Color(0xFFE3E3E3),
                                   borderRadius: BorderRadius.circular(3)),
@@ -106,7 +106,7 @@ Widget articleBoxFeatured(
                                   ),
                                 ],
                               ),
-                            ),
+                            ),*/
                           ],
                         ),
                       ),

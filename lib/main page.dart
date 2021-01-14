@@ -2,6 +2,8 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:lokaarpan/pages/articles.dart';
+import 'package:lokaarpan/pages/category_articles.dart';
+import 'package:lokaarpan/pages/jobs.dart';
 import 'package:lokaarpan/pages/local_articles.dart';
 import 'package:lokaarpan/pages/search.dart';
 import 'package:lokaarpan/pages/settings.dart';
@@ -23,7 +25,8 @@ class _MyHomePageState extends State<MyHomePage> {
     Articles(),
     Search(),
     LocalArticles(),
-    Settings()
+    Jobs(),
+    Settings(),
   ];
 
   @override
@@ -85,6 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Icon(Icons.list, size: 30, semanticLabel: "news",),
           Icon(Icons.search, size: 30),
           Icon(Icons.people_outline, size: 30),
+          Icon(Icons.account_tree_sharp),
           Icon(Icons.settings, size: 30,)
         ],
         onTap: _onItemTapped,
