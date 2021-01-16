@@ -38,6 +38,7 @@ dependencies:
   shared_preferences: ^0.5.10
   flutter_widget_from_html: ^0.5.0+3
   curved_navigation_bar: ^0.3.4
+  provider: ^4.0.2
 
 
 
@@ -74,6 +75,14 @@ flutter:
     - assets/launcher_icon.png
     - assets/no-internet.png
     - assets/play-button.png
+    - assets/boxed/economy.png
+    - assets/boxed/special.png
+    - assets/boxed/education.png
+    - assets/boxed/entertainment.png
+    - assets/boxed/government.png
+    - assets/boxed/national.png
+    - assets/boxed/education.png
+    - assets/boxed/special.png
     - assets/boxed/fashion.png
     - assets/boxed/health.png
     - assets/boxed/lifestyle.png

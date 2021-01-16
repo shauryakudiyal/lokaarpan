@@ -45,7 +45,7 @@ class _LocalArticlesState extends State<LocalArticles> {
   Future<List<dynamic>> fetchLatestArticles(int page) async {
     try {
       var response = await http.get(
-          "$WORDPRESS_URL/wp-json/wp/v2/posts/?categories[]=$ClassifiedLowerID&page=$page&per_page=9&_fields=id,date,title,content,custom,link");
+          "$Classified_URL/wp-json/wp/v2/posts/?categories[]=$ClassifiedLowerID&page=$page&per_page=9&_fields=id,date,title,content,custom,link");
 
       //  var response = await http.get(
       //      '$WORDPRESS_URL/wp-json/wp/v2/posts/?page=$page&per_page=10&_fields=id,date,title,content,custom,link');
@@ -75,7 +75,7 @@ class _LocalArticlesState extends State<LocalArticles> {
   Future<List<dynamic>> fetchFeaturedArticles(int page) async {
     try {
       var response = await http.get(
-          "$WORDPRESS_URL/wp-json/wp/v2/posts/?categories[]=$ClassifiedUpperID&page=$page&per_page=10&_fields=id,date,title,content,custom,link");
+          "$Classified_URL/wp-json/wp/v2/posts/?categories[]=$ClassifiedUpperID&page=$page&per_page=10&_fields=id,date,title,content,custom,link");
 
       if (this.mounted) {
         if (response.statusCode == 200) {
